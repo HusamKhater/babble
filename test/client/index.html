@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mocha Tests</title>
+      <link rel="stylesheet" href="../../node_modules/mocha/mocha.css" /> 
+      <script type="text/javascript" src="../../node_modules/mocha/mocha.js"></script> 
+      <script type="text/javascript" src="../../node_modules/chai/chai.js"></script> 
+      <script type="text/javascript" src="../../node_modules/sinon/pkg/sinon.js"></script>
+      <script type="text/javascript" src="../../client/scripts/main.js"></script>
+    </head>
+    <body>
+      <div id="mocha"></div>
+
+      <script type="text/javascript">
+        mocha.setup('bdd');
+      </script>
+      
+      <script type="text/javascript" src="test.js"></script>
+      <script>
+        mocha.checkLeaks();
+        mocha.run();
+      </script>
+      <div style="display:none">
+          <header class="Header" aria-label="the header">
+            <!-- <img class="Header-logo" src="./images/icons/babblelogo.PNG" alt="Logo"> -->
+    </header>
+        
+    <nav class="Left-side" aria-label="empty navbar">
+    </nav>
+    
+    <main class="Main" aria-label="the main section">
+        <h1 class="Main-vegans" aria-label="Vegans">Vegans</h1>
+        <dl class="Main-stats">
+            <!-- <dt class="Main-statsName">Vegans</dt> -->
+            
+            <dt Class="Main-statsNumberOfMessagesIcon" aria-label="number of messages">
+                <!-- <img src="./images/icons/messages.PNG" alt="Number-of-Messages"> -->
+            </dt>
+            <dd class="Main-statsNumberOfMessages" id="numberOfMessage">0</dd>
+            
+            <dt Class="Main-statsNumberOfOnlineIcon" aria-label="number of users">
+                <!-- <img src="./images/icons/connected.PNG" alt="Number-of-Userss" > -->
+            </dt>
+            <dd class="Main-statsNumberOfOnline" id="numberOfUsers">0</dd>
+        </dl>
+
+        <ol class="Main-messages" aria-label="the messages">
+            
+             
+        </ol> 
+        
+
+    <div id="growable" class="Growable js-growable" aria-label="the buttom">
+	    <pre><span></span><br></pre>
+	    <textarea class="Main-GrowableTextarea" id="messageContent" aria-label="write your messages here" placeholder="write your messages here .. "></textarea>
+        
+        <input type="image" name="submit" src=""
+                id="submitButton" class="Main-GrowableSubmitImg"  alt="Submit" aria-label="submit the message"/>
+    </div>
+
+
+
+    </main>
+    <div id="registBox" class="regist" aria-label="the registeration pop-up">
+        <h2 class="regist-Header" aria-label="Who are you">Who are you?</h2>
+        <form class="regist-form">
+            <div class="regist-formName">
+                <label>Full name:</label><br/>
+                <input type="text" id="fullname" name="fullname" class="fullname" placeholder="babbla" aria-label="enter your name here"><br>
+            </div>
+
+            <div class="regist-formEmail">
+                <label>Email:</label><br/>
+                <input type="text" name="email" id="email" class="email" placeholder="babbl@gmail.com" aria-label="enter your mail here"><br><br>
+            </div>
+
+            <div class="regist-formClicks">
+            <button type="button" value="Stay Anonymous" class="regist-formAnonymous" id="anonymousButton" aria-label="stay anonymous">Stay Anonymous</button>
+            <button type="button" value="Save" class="regist-formSave" id="saveButton" aria-label="save your name and email">Save</button>
+            </div>
+        </form>
+    </div>
+
+      </div>
+
+    </body>
+  </html>
+
+  

@@ -1,0 +1,86 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{display:block;}
+body{line-height:1;overflow-y:hidden;overflow-x:hidden;}
+ol, ul{list-style:none;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+html{font-family:sans-serif;}
+body{background-color:#ebebe0;}
+.Header{width:100%;height:14.3vh;position:absolute;background-color:rgb(50, 52, 67);padding:0;z-index:2;}
+.Header-logo{width:150px;height:12vh;margin:1vh}
+.Left-side{background-color:rgb(97, 210, 144);width:18vw;position:absolute;height:100%;}
+.Main{background-color:#ebebe0;z-index:3;position:absolute;width:82vw;height:85.7vh;top:14.3vh;left:18vw;}
+.Main-vegans{float:left;margin-left:30px;margin-top:1vh;margin-bottom:1vh;}
+.Main-stats{float:right;overflow:hidden;height:9vh;margin-top:1vh;margin-bottom:1vh;}
+dl{margin-right:20px;}
+dd{margin-right:10px;}
+dt{margin-right:20px;}
+.Main-statsName{font-family:Nunito;color:#292929;font-size:22.5px;font-weight:400;text-align:left;margin-top:1.5vh;padding-left:3%;}
+.Main-statsNumberOfMessagesIcon{border-style:solid;border-color:#15ca8a;background-color:rgba(94, 211, 149, 0);width:1.3%;height:1.9%;padding-right:0.5%;text-align:right;margin-top:1.5%;float:left;}
+.Main-statsNumberOfMessages{font-family:Nunito;color:#353744;font-size:15px;font-weight:700;text-align:left;margin-top:1.5%;float:left;}
+.Main-statsNumberOfOnlineIcon{width:0.9%;height:2.6%;text-align:right;margin-top:1.5%;padding-right:0.5%;float:left;}
+.Main-statsNumberOfOnline{font-family:Nunito;color:#353744;font-size:15px;font-weight:700;text-align:left;margin-right:2%;margin-top:1.5%;float:left;}
+h1{font-size:1.6em;}
+::-webkit-scrollbar-track{background-color:#eaeaea;border-right:1px solid #ccc;border-left:1px solid #ccc;border-radius:10px;}
+::-webkit-scrollbar-thumb{background-color:#ccc;border-radius:10px;}
+::-webkit-scrollbar-thumb:hover{background-color:#aaa;}
+::-webkit-scrollbar{width:0.7%;border-radius:10px;}
+.Growable{background-color:white;position:absolute;border-top:1px solid gray;max-height:300px;overflow:hidden;-webkit-scrollbar:red;bottom:0px;width:100%;height:auto;min-height:15vh;display:flex;}
+.Growable textarea,
+.Growable pre{margin:0;padding:0;box-sizing:border-box;font-family:inherit;font-size:inherit;white-space:pre-wrap;word-wrap:break-word;}
+.Growable textarea{width:82%;height:60%;top:10PX;left:1%;border:none;position:relative;resize:none;overflow:visible;font-family:Nunito;color:#616161;font-weight:400;text-align:left;}
+.Main-submitIcon{float:right;margin-right:2vw;background:white;background-color:white;border:0px solid white;height:40px;position:relative;top:10px;margin-bottom:5px;margin-left:2vw;}
+.Main-GrowableSubmitImg{float:right;margin-right:2vw;background:white;background-color:white;border:0px solid white;height:40px;position:relative;top:10px;margin-bottom:5px;margin-left:2vw;}
+.Main-messages{top:9%;width:99.5%;height:63vh;position:absolute;overflow-y:scroll;overflow-x:hidden;}
+.Main-messagesMessage{width:auto;max-width:660px;margin-left:30px;margin-bottom:5px;}
+.Main-messagesMessageImg{height:36px;float:left;border-radius:50%;}
+.Main-messagesMessageContent{border-radius:9px;border-style:solid;border-width:1px;border-color:#d7d7d7;background-color:#ffffff;width:fit-content;max-width:600px;height:auto;margin-left:50px;min-width:200px;}
+.Main-messagesMessageContentUsername{font-family:Nunito;color:#202729;font-size:15px;font-weight:700;text-align:right;padding-left:5px;}
+.Main-messagesMessageContentTimestamp{margin-top:1%;margin-left:5px;font-family:Nunito;color:#999999;font-size:12px;font-weight:400;text-align:left;}
+.Main-messagesMessageContentDeleteIcon{float:right;background-color:white;border:0px solid white;margin-top:1%;margin-right:1px;}
+.Main-messagesMessageContentData{display:flow-root;margin-top:0.7%;padding-left:5px;font-family:Nunito;color:#616161;font-size:15px;font-weight:400;text-align:left;width:auto;padding-bottom:5px;padding-right:5px;word-wrap:break-word}
+.regist{left:30%;top:5%;position:absolute;height:90vh;width:40vw;z-index:5;background-color:rgb(234, 234, 234);}
+.regist-Header{margin-top:10vh;margin-left:20%;font-size:1.4em;font-family:Nunito;}
+.regist-form{width:100%;height:70vh;position:relative;margin-top:3vh;}
+.regist-formName, .regist-formEmail{margin-top:3vh;margin-left:20%;}
+.regist-formClicks{position:relative;float:right;margin-right:5%;top:40%;}
+.regist-form input{margin-top:10px;width:50%;height:30px;box-sizing:border-box;border-radius:8px;border:1px solid #ccc;padding-left:10px;}
+.regist-form button{height:20px;padding:0px 20px 0px 20px;border:0px;border-radius:5px;font-family:Nunito;}
+.regist-formSave{color:white;background-color:green;}
+@media screen and (min-height:0px) and (max-height:570px){.regist-formClicks{position:relative;float:right;margin-right:5%;top:10%;}
+}
+@media screen and (min-width:0px) and (max-width:638px){.Left-side{width:100px;}
+.Main{left:0px;width:100%;}
+.Main-messagesMessage{max-width:500px;width:auto;margin-left:5px;}
+.Main-messagesMessageContent{max-width:440px;}
+@media screen and (min-width:0px) and (max-width:320px){.Main-messagesMessage{max-width:260px;width:auto;}
+.Main-messagesMessageContent{max-width:200px;}
+}
+.regist{left:5%;top:5%;position:absolute;height:90vh;width:90vw;z-index:5;background-color:rgb(234, 234, 234);}
+.regist-Header{margin-top:7vh;margin-left:10%;font-size:1.4em;font-family:Nunito;}
+.regist-form{width:100%;height:70vh;position:relative;}
+.regist-formName, .regist-formEmail{margin-top:50px;margin-left:10%;}
+.regist-formClicks{position:relative;float:right;margin-right:5%;top:40%;}
+.regist-form input{margin-top:10px;width:70%;height:30px;box-sizing:border-box;border-radius:8px;border:1px solid #ccc;padding-left:10px;}
+@media screen and (min-height:400px) and (max-height:570px){.regist-formClicks{position:relative;float:right;margin-right:5%;top:10%;}
+}
+@media screen and (min-height:0px) and (max-height:400px){.regist-formClicks{position:relative;float:right;margin-right:5%;top:1%;}
+}
+}
+.hidden{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;}
+@import url('https://fonts.googleapis.com/css?family=Nunito')

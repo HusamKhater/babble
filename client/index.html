@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Vegans - Babble</title>
+</head>
+<body>
+    
+    <header class="Header" aria-label="the header">
+            <img class="Header-logo" src="./images/babblelogo.png" alt="Logo">
+    </header>
+        
+    <nav class="Left-side" aria-label="empty navbar">
+    </nav>
+    
+    <main class="Main" aria-label="the main section">
+
+        <header class="Main-header">
+            <h1 class="Main-vegans" aria-label="Vegans">Vegans</h1>
+        </header>
+        <dl class="Main-stats">
+            
+            <dt Class="Main-statsNumberOfMessagesIcon" aria-label="number of messages">
+                <img src="./images/messages.png" alt="Number-of-Messages">
+            </dt>
+            <dd class="Main-statsNumberOfMessages" id="numberOfMessage">0</dd>
+            
+            <dt Class="Main-statsNumberOfOnlineIcon" aria-label="number of users">
+                <img src="./images/connected.png" alt="Number-of-Userss" >
+            </dt>
+            <dd class="Main-statsNumberOfOnline" id="numberOfUsers">0</dd>
+        </dl>
+    
+
+        <ol class="Main-messages" aria-label="the messages">
+        </ol> 
+    
+    
+    <div id="growable" class="Growable js-growable" aria-label="the buttom">
+	    <pre><span></span><br></pre>
+	    <textarea class="Main-GrowableTextarea" id="messageContent" aria-label="write your messages here" placeholder="write your messages here .. "></textarea>
+       
+        <button class="Main-submitIcon" id="submitButton"><img class="Main-GrowableSubmitImg" src="./images/submitButton.png"   aria-label="submit the message" alt="submit the message"></button>
+    </div>
+     
+    
+    </main>
+
+
+    <div id="registBox" class="regist" aria-label="the registeration pop-up">
+        <h2 class="regist-Header" aria-label="Who are you">Who are you?</h2>
+        <form class="regist-form">
+            <div class="regist-formName">
+                <label>Full name:</label><br/>
+                <input type="text" id="fullname" name="fullname" class="fullname" placeholder="babbla" aria-label="enter your name here"><br>
+            </div>
+
+            <div class="regist-formEmail">
+                <label>Email:</label><br/>
+                <input type="text" name="email" id="email" class="email" placeholder="babbl@gmail.com" aria-label="enter your mail here"><br><br>
+            </div>
+
+            <div class="regist-formClicks">
+            <button type="button" value="Stay Anonymous" class="regist-formAnonymous" id="anonymousButton" aria-label="stay anonymous">Stay Anonymous</button>
+            <button type="button" value="Save" class="regist-formSave" id="saveButton" aria-label="save your name and email">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

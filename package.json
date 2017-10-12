@@ -1,0 +1,23 @@
+{
+  "name": "babble",
+  "version": "1.0.0",
+  "description": "Web-based responsive chat",
+  "main": "./server/main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/server/test.js & http-server -p 8081",
+    "start": "concurrently \" http-server -p 8080 ./client \"  \"node ./server/main.js\""
+  },
+  "author": "Husam Khater",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.0",
+    "sinon": "^4.0.1"
+  }
+}
