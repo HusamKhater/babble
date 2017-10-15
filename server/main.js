@@ -235,6 +235,27 @@ http.createServer(function (req, res) {
 }).listen(9000, 'localhost');
 console.log('Server running.');
 
+setInterval(function(){
+
+    while(waittingClients.length > 0){
+        var waittingClient = waittingClients.pop();
+        waittingClient.res.end(JSON.stringify({
+            array : []
+        }))
+    }
+    while(waittingClientForStats.length > 0){
+        var client = waittingClientForStats.pop();
+        var numberOfMessages = messagesUtil.getCurrentMessagesLength();
+        var numberOfUsers = numberOfOnlineClients;
+        var ret = {
+             users : numberOfUsers,
+             messages : numberOfMessages
+        };
+        client.end(JSON.stringify(ret)); 
+    }
+
+    }, 30000);
+
 // based on: https://stackoverflow.com/questions/14733374/how-to-generate-md5-file-hash-on-javascript
 function MD5(s) {
     function L(k, d) {
